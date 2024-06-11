@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Porsche Macan</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+      }
+    .containerf { 
+        background-color: black;
+        color:white;
+        bottom: 0%;
+        width: 100%;
+        line-height: 3;
+        text-align: center;
+        font-family: "Franklin Gothic";
+      }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+    }
+    .header img {
+        width: 650px;
+        height: auto;
+    }   
+    .container {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+    }
+    .specs {
+      margin-top: 20px;
+    }
+    .specs .spec {
+      margin-bottom: 20px;
+    }
+    .specs .value {
+      font-size: 3em;
+      font-weight: bold;
+    }
+    .specs .unit {
+      font-size: 0.5em;
+      vertical-align: top;
+    }
+    .specs .description {
+      font-size: 1em;
+    }
+    .car-image img {
+      max-width: 100%;
+      height: auto;
+    }
+    button {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+    p {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .container{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .model{
+      margin: 20px;
+      text-align: center;
+    }
+    .model img{
+      width: 500px;
+      height:auto;
+    }
+    .Name {
+      font-size: 1.5em;
+    } 
+    .Preis {
+      font-size: 1em;
+      font-weight: lighter;
+    }
+    .container mt-4 {
+      margin:auto;
+    }
+  </style>
+</head>
+<body>
+
+    <button onclick="goBack()" class="btn btn-dark" id="backButton">← Zurück zu Modellen</button>
+
+    <div class="header">
+    <img src="Schriftzug2.svg" alt="Macan">
+    </div>
+
+<div class="container">
+  <div class="row specs">
+    <div class="col-md-6">
+      <div class="spec">
+        <span class="value">5,2s</span>
+        <div class="description">Beschleunigung 0 - 100 km/h bei Launch Control</div>
+      </div>
+      <div class="spec">
+        <span class="value">300 kW / 408 PS</span>
+        <div class="description">
+          Leistung bis zu (kW)/Leistung bis zu (PS)
+        </div>
+      </div>
+      <div class="spec">
+        <span class="value">220 km/h</span>
+        <div class="description">Höchstgeschwindigkeit</div>
+      </div>
+    </div>
+    <div class="col-md-6 car-image">
+      <img src="Macan-vorne.png" alt="Porsche Macan">
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-4">
+    <p>Die einzige Frage die sich stellt ist, welcher Macan ist der passende?</p>
+</div>
+
+<div class="container">
+<div class="model">
+    <img src="porsche-macan 4 e.webp" alt="Macan 4 e">
+    <p class="Name">Macan 4 Electric</p>
+    <p class="Preis">Ab EUR 84.100,00 inkl.MwSt.</p>
+  </div>
+ 
+
+ <div class="model">
+    <img src="porsche-macan turbo e.webp" alt="Macan Turbo e">
+    <p class="Name">Macan Turbo Electric</p>
+    <p class="Preis">Ab EUR 114.600,00 inkl.MwSt.</p>
+  </div>
+ 
+</div>
+  <div class="containerf">
+    <span>&copy; 2024 Simon Waniek. Alle Rechte sind vorbehalten.</span>
+</div>
+
+
+<script>
+        function goBack() {
+    window.history.back();
+        }
+</script>
+</body>
+</html>

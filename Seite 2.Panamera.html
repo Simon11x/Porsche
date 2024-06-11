@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Porsche Panamera</title>
+
+</head>
+<body>
+    <button onclick="goBack()" class="btn btn-primary" id="backButton">← Zurück zu Modellen</button>
+
+     <div class="container">
+        <div class="slideshow">
+            <div class="slide active">
+            <h1>Panamera</h1>
+            <p>Ab EUR 110.900,00 Inkl. MwSt.</p>
+            <img src="porsche-panamera.png" alt="Panamera">
+            <div class="details">
+                <table>
+                    <td><div class="detail"><strong>260 kW / 353 PS</strong>
+                        <div>Leistung (kW) / Leistung (PS)</div></td>
+                    <td><div class="detail"><strong>5.3 s</strong>
+                        <div>Beschleunigung 0-100 km/h</div></td>
+                    <td><div class="detail"><strong>272 km/h</strong>
+                        <div>Höchstgeschwindigkeit</div></td>
+                </table>
+            </div>
+            </div>
+
+            <div class="slide">
+                <h1>Panamera 4</h1>
+                <p>Ab EUR 114.900,00 Inkl. MwSt.</p>
+                <img src="porsche-panamera.png" alt="Panamera 4"> 
+                <div class="details">
+                    <table>
+                        <td><div class="detail"><strong>260 kW / 353 PS</strong>
+                            <div>Leistung (kW) / Leistung (PS)</div></td>
+                        <td><div class="detail"><strong>5.0 s</strong>
+                            <div>Beschleunigung 0-100 km/h</div></td>
+                        <td><div class="detail"><strong>270 km/h</strong>
+                            <div>Höchstgeschwindigkeit</div></td>
+                    </table>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h1>Panamera 4 E-Hybrid</h1>
+            <p>Ab EUR 123.400,00 Inkl. MwSt.</p>
+            <img src="porsche-4E Hybrid.png" alt="Panamera 4 E-Hybrid"> 
+            <div class="details">
+                <table>
+                    <td><div class="detail"><strong>346 kW / 470 PS</strong>
+                        <div>Leistung (kW) / Leistung (PS)</div></td>
+                    <td><div class="detail"><strong>4.1 s</strong>
+                        <div>Beschleunigung 0-100 km/h</div></td>
+                    <td><div class="detail"><strong>280 km/h</strong>
+                        <div>Höchstgeschwindigkeit</div></td>
+                </table>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Panamera 4 E-Hybrid Executive</h1>
+        <p>Ab EUR 134.400,00 Inkl. MwSt.</p>
+        <img src="porsche-4E Hybrid Executive.png" alt="Panamera 4 E-Hybrid Executive"> 
+        <div class="details">
+            <table>
+                <td><div class="detail"><strong>346 kW / 470 PS</strong>
+                    <div>Leistung (kW) / Leistung (PS)</div></td>
+                <td><div class="detail"><strong>4.2 s</strong>
+                    <div>Beschleunigung 0-100 km/h</div></td>
+                <td><div class="detail"><strong>280 km/h</strong>
+                    <div>Höchstgeschwindigkeit</div></td>
+            </table>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h1>Panamera 4S E-Hybrid</h1>
+            <p>Ab EUR 138.200,00 Inkl. MwSt.</p>
+            <img src="porsche-4S E Hybrid.png" alt="Panamera 4S E-Hybrid"> 
+            <div class="details">
+                <table>
+                    <td><div class="detail"><strong>400 kW / 544 PS</strong>
+                        <div>Leistung (kW) / Leistung (PS)</div></td>
+                    <td><div class="detail"><strong>3.7 s</strong>
+                        <div>Beschleunigung 0-100 km/h</div></td>
+                    <td><div class="detail"><strong>290 km/h</strong>
+                        <div>Höchstgeschwindigkeit</div></td>
+                </table>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <h1>Panamera Turbo E-Hybrid</h1>
+                <p>Ab EUR 198.000,00 Inkl. MwSt.</p>
+                <img src="porsche-Turbo E Hybrid.png" alt="Panamera Turbo E-Hybrid"> 
+                <div class="details">
+                    <table>
+                        <td><div class="detail"><strong>500 kW / 680 PS</strong>
+                            <div>Leistung (kW) / Leistung (PS)</div></td>
+                        <td><div class="detail"><strong>3.2 s</strong>
+                            <div>Beschleunigung 0-100 km/h</div></td>
+                        <td><div class="detail"><strong>315 km/h</strong>
+                            <div>Höchstgeschwindigkeit</div></td>
+                    </table>
+                    </div>
+                </div>
+
+        <div class="arrows">
+            <span class="arrow left" onclick="prevSlide()">&lt;</span>
+            <span class="arrow right" onclick="nextSlide()">&gt;</span>
+        </div>
+    </div>
+
+</br></br></br></br></br></br></br></br></br></br>
+
+        </div>
+        <div class="containerf">
+        <span>&copy; 2024 Simon Waniek. Alle Rechte sind vorbehalten.</span>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('porsche-normal.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color:white;
+        }
+        .containerf { 
+            background-color: black;
+            color:white;
+            bottom: 0%;
+            width: 100%;
+            line-height: 3;
+            text-align: center;
+            font-family: "Franklin Gothic";
+        }
+        .container {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0,0,0,0.5);
+        }
+        .slideshow {
+            position: relative;
+        }
+        .slide {
+            display:none;
+        }
+        .slide.active {
+            display:block;
+        }
+        .slideshow img {
+            max-width: 100%;
+            height: auto;
+        }
+        .arrows {
+            display:flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+        .arrow {
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+            background: rgba(0,0,0,0.5);
+            color:white;
+        }
+        .details {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 0px;
+        }
+        .detail{
+            text-align: center;
+        } 
+        .detail div {
+            margin-top: 5px;
+        }
+        table {
+            width:100%;
+            border-collapse: separate;
+            border-spacing:20px;
+            table-layout: fixed;
+            margin-bottom: 10px;
+        }
+        button {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+    </style>
+
+<script>
+    let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === currentSlide);
+    });
+
+}
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
+
+    showSlide(currentSlide);
+
+    function goBack() {
+    window.history.back();
+  }
+</script>
+
+</body>
+</html>

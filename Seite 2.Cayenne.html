@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Porsche Cayenne</title>
+
+</head>
+<body>
+    <button onclick="goBack()" class="btn btn-primary" id="backButton">← Zurück zu Modellen</button>
+
+     <div class="container">
+        <div class="slideshow">
+            <div class="slide active">
+            <h1>Cayenne</h1>
+            <p>Ab EUR 99.600,00 Inkl. MwSt.</p>
+            <img src="porsche-Cayenne.png" alt="Cayenne">
+            <div class="details">
+                <table>
+                    <td><div class="detail"><strong>260 kW / 353 PS</strong>
+                        <div>Leistung (kW) / Leistung (PS)</div></td>
+                    <td><div class="detail"><strong>6.0 s</strong>
+                        <div>Beschleunigung 0-100 km/h</div></td>
+                    <td><div class="detail"><strong>248 km/h</strong>
+                        <div>Höchstgeschwindigkeit</div></td>
+                </table>
+            </div>
+            </div>
+
+            <div class="slide">
+                <h1>Cayenne E-Hybrid</h1>
+                <p>Ab EUR 114.000,00 Inkl. MwSt.</p>
+                <img src="porsche-Cayenne E-Hybrid.png" alt="Cayenne E-Hybrid"> 
+                <div class="details">
+                    <table>
+                        <td><div class="detail"><strong>346 kW / 470 PS</strong>
+                            <div>Leistung (kW) / Leistung (PS)</div></td>
+                        <td><div class="detail"><strong>4.9 s</strong>
+                            <div>Beschleunigung 0-100 km/h</div></td>
+                        <td><div class="detail"><strong>254 km/h</strong>
+                            <div>Höchstgeschwindigkeit</div></td>
+                    </table>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h1>Cayenne S</h1>
+            <p>Ab EUR 119.600,00 Inkl. MwSt.</p>
+            <img src="porsche-Cayenne S.png" alt="Cayenne S"> 
+            <div class="details">
+                <table>
+                    <td><div class="detail"><strong>349 kW / 474 PS</strong>
+                        <div>Leistung (kW) / Leistung (PS)</div></td>
+                    <td><div class="detail"><strong>5.0 s</strong>
+                        <div>Beschleunigung 0-100 km/h</div></td>
+                    <td><div class="detail"><strong>273 km/h</strong>
+                        <div>Höchstgeschwindigkeit</div></td>
+                </table>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Cayenne S E-Hybrid</h1>
+        <p>Ab EUR 124.600,00 Inkl. MwSt.</p>
+        <img src="porsche-Cayenne S e.png" alt="Cayenne S e"> 
+        <div class="details">
+            <table>
+                <td><div class="detail"><strong>382 kW / 519 PS</strong>
+                    <div>Leistung (kW) / Leistung (PS)</div></td>
+                <td><div class="detail"><strong>4.7 s</strong>
+                    <div>Beschleunigung 0-100 km/h</div></td>
+                <td><div class="detail"><strong>263 km/h</strong>
+                    <div>Höchstgeschwindigkeit</div></td>
+            </table>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h1>Cayenne GTS</h1>
+            <p>Ab EUR 142.000,00 Inkl. MwSt.</p>
+            <img src="porsche-Cayenne GTS.png" alt="Cayenne GTS"> 
+            <div class="details">
+                <table>
+                    <td><div class="detail"><strong>368 kW / 500 PS</strong>
+                        <div>Leistung (kW) / Leistung (PS)</div></td>
+                    <td><div class="detail"><strong>4.7 s</strong>
+                        <div>Beschleunigung 0-100 km/h</div></td>
+                    <td><div class="detail"><strong>275 km/h</strong>
+                        <div>Höchstgeschwindigkeit</div></td>
+                </table>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <h1>Cayenne Turbo E-Hybrid</h1>
+                <p>Ab EUR 185.700,00 Inkl. MwSt.</p>
+                <img src="porsche-Cayenne Turbo e.png" alt="Cayenne Turbo E-Hybrid"> 
+                <div class="details">
+                    <table>
+                        <td><div class="detail"><strong>544 kW / 739 PS</strong>
+                            <div>Leistung (kW) / Leistung (PS)</div></td>
+                        <td><div class="detail"><strong>3.7 s</strong>
+                            <div>Beschleunigung 0-100 km/h</div></td>
+                        <td><div class="detail"><strong>295 km/h</strong>
+                            <div>Höchstgeschwindigkeit</div></td>
+                    </table>
+                    </div>
+                </div>
+
+        <div class="arrows">
+            <span class="arrow left" onclick="prevSlide()">&lt;</span>
+            <span class="arrow right" onclick="nextSlide()">&gt;</span>
+        </div>
+    </div>
+
+
+        </div>
+        <div class="containerf">
+        <span>&copy; 2024 Simon Waniek. Alle Rechte sind vorbehalten.</span>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('porsche-normal.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color:white;
+        }
+        .containerf { 
+            background-color: black;
+            color:white;
+            bottom: 0%;
+            width: 100%;
+            line-height: 3;
+            text-align: center;
+            font-family: "Franklin Gothic";
+        }
+        .container {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0,0,0,0.5);
+        }
+        .slideshow {
+            position: relative;
+        }
+        .slide {
+            display:none;
+        }
+        .slide.active {
+            display:block;
+        }
+        .slideshow img {
+            max-width: 100%;
+            height: auto;
+        }
+        .arrows {
+            display:flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+        .arrow {
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+            background: rgba(0,0,0,0.5);
+            color:white;
+        }
+        .details {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 0px;
+        }
+        .detail{
+            text-align: center;
+        } 
+        .detail div {
+            margin-top: 5px;
+        }
+        table {
+            width:100%;
+            border-collapse: separate;
+            border-spacing:20px;
+            table-layout: fixed;
+            margin-bottom: 10px;
+        }
+        button {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+    </style>
+
+<script>
+    let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === currentSlide);
+    });
+
+}
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
+
+    showSlide(currentSlide);
+
+    function goBack() {
+    window.history.back();
+  }
+</script>
+
+</body>
+</html>
